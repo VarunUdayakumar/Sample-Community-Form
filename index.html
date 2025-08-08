@@ -1,0 +1,51 @@
+<!-- CREATING A FORM FOR A COMMUNITY  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="outer-box">
+        <div class="container">
+            <div class="left">
+                <h1>Welcome to <span>IdeaSpark</span></h1>
+                <h3>Let's create somthing <span>amazing</span> together</h3>
+                <p>Join our vibrant Idea Community and connect with thinkers, creators, and problem-solvers from around the globe. By registering, you’ll gain access to collaborative spaces, idea-sharing forums, and exclusive community events. Fill out your details to become a valued member and start contributing your insights, skills, and creativity to projects that make a difference.</p>
+            </div>
+            <div class="right">
+                <h3>Basic Information</h3>  
+                <form id="Community_Form">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <div class="error" id="nameError"></div>
+
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <div class="error" id="emailError"></div>
+
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Your Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <div class="error" id="genderError"></div>
+
+                    <input type="number" id="age" placeholder="Your age" required />
+                    <div class="error" id="ageError"></div>
+
+                    <textarea rows="4" id="description" placeholder="Describe yourself briefly" required></textarea>
+                    <div class="error" id="descError"></div>
+
+                    <input type="number" id="contact" placeholder="Your Contact Number" required />
+                    <div class="error" id="contactError"></div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
